@@ -70,9 +70,11 @@
   </style>
 
   <script>
+ const secondHand = document.querySelector(".second-hand")
  function setDate () {
    const now = new Date();
    const second = now.getSeconds()
+   const secondDegrees = ((second/60)*360)
    console.log (" this is the second", second)
  }
 
